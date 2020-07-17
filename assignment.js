@@ -2,7 +2,7 @@
 function feetToMile(feet){
     var mile= feet/5280;
     if(mile<0){
-        return "value cannot be negative";
+        return "distance cannot be negative";
     }
     return mile;
 }
