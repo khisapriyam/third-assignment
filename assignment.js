@@ -44,15 +44,17 @@ console.log(total);
 //tinyFriend
 function tinyFriend(friendList){
 
-    var min = 0;
-    var tinyFriend = friendList[0].length;
+    var tinyFri = friendList[0];
     for (var i = 0; i<friendList.length; i++){
-        var element = (friendList[i]).length;
-        if(element<tinyFriend){
-            min = i;
+        var element = (friendList[i]);
+        if(element.length<tinyFri.length){
+            tinyFri = element;
         }
     }
-    return friendList[min]; 
+    return tinyFri; 
 }
 var result = tinyFriend(["Newton", "Helmholtz","Curie", "Einstein","Max-Planck"]);
 console.log(result);
+
+
+    
